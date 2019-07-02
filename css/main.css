@@ -1,0 +1,17 @@
+.page-wrapper {
+  font-family: "Nunito", sans-serif;
+  color: #5a5C69;
+  display: grid;
+  grid-template: auto/auto auto;
+  grid-template-areas: "sidebar content";
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: content;
+}
+
+/*# sourceMappingURL=main.css.map */
