@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.bottom-4-panels {
+  display: grid;
+  grid-area: content;
+}
+
 @media only screen and (min-width: 768px) {
 .bottom-4-panels {
   height: 800px;
@@ -14,7 +19,7 @@
 }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 560px) {
   .illu-and-develop {
     margin-top: 300px;
   }

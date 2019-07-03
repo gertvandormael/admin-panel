@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+.projects {
+  display: grid;
+  grid-area: content;
+}
+
 .projectsbar-grey {
   background-color: #eaecf4;
   border-radius: 5px;
@@ -61,7 +66,7 @@
     flex-wrap: wrap;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 560px) {
   .projects {
     width: 70%;
   }
