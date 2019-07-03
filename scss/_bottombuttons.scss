@@ -9,6 +9,8 @@
   height: 327px;
   padding: 0px 12px;
   line-height: 1.5;
+  display: grid;
+  grid-area: content;
 }
 
   .buttoncolorname {
@@ -58,8 +60,14 @@
 @media only screen and (min-width: 768px) {
   .bottombuttons {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .bottombutton-darkblue, .bottombutton-green, .bottombutton-lightblue, .bottombutton-yellow, .bottombutton-red, .bottombutton-grey {
+    margin-bottom: 20px;
   }
 }

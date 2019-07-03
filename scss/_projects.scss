@@ -1,45 +1,36 @@
+@import 'cardjal';
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .projectsbar-grey {
   background-color: #eaecf4;
   border-radius: 5px;
-  margin: 0px 10px 24px;
-  width: 360px;
+  margin: 0 10px 24px;
+  max-width: 360px;
   height: 16px;
 }
-
 @mixin projectsbar-color($color, $width) {
-  width: $width;
+  max-width: $width;
   height: 16px;
   background-color: $color;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
+.projects-header {
+  @include cardheader
+}
+
 .projects {
-  width: 388px;
-  height: auto;
-  color: $dark-grey;
-  font-size: 12.8px;
-  border-radius: 10px;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  background-color: #fff;
+  @include cardmarkup
+}
 
-
-  .projects-header {
-    @include header
-  }
-
-  .projects-subject {
-    width: 360px;
-    margin: 0px 10px 8px;
-    }
-
+.projects-subject {
+  @include cardcontent
 }
 
 .projectsbar-red {
@@ -62,12 +53,16 @@
   @include projectsbar-color($green, 100%);
   border-radius: 5px;
 }
-
 @media only screen and (min-width: 768px) {
-.projects-subject {
+  .projects-subject {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .projects {
+    width: 70%;
   }
 }
