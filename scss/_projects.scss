@@ -1,0 +1,73 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.projectsbar-grey {
+  background-color: #eaecf4;
+  border-radius: 5px;
+  margin: 0px 10px 24px;
+  width: 360px;
+  height: 16px;
+}
+
+@mixin projectsbar-color($color, $width) {
+  width: $width;
+  height: 16px;
+  background-color: $color;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.projects {
+  width: 388px;
+  height: auto;
+  color: $dark-grey;
+  font-size: 12.8px;
+  border-radius: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+
+
+  .projects-header {
+    @include header
+  }
+
+  .projects-subject {
+    width: 360px;
+    margin: 0px 10px 8px;
+    }
+
+}
+
+.projectsbar-red {
+  @include projectsbar-color($red, 20%);
+}
+
+.projectsbar-yellow {
+  @include projectsbar-color($yellow, 40%);
+}
+
+.projectsbar-darkblue {
+  @include projectsbar-color($dark-blue, 60%);
+}
+
+.projectsbar-lightblue {
+  @include projectsbar-color($light-blue, 80%);
+}
+
+.projectsbar-green {
+  @include projectsbar-color($green, 100%);
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+.projects-subject {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

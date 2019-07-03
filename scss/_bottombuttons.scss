@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bottombuttons {
+  width: 388px;
+  height: 327px;
+  padding: 0px 12px;
+  line-height: 1.5;
+}
+
+  .buttoncolorname {
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .buttoncolorcode {
+    font-size: 12.8px;
+    color: $light-grey;
+  }
+
+@mixin bottombuttons ($color) {
+  background-color: $color;
+  padding: 20px;
+  text-align: left;
+  border-radius: 8px;
+  width: 168px;
+  height: 83px;
+}
+
+.bottombutton-darkblue {
+  @include bottombuttons($dark-blue);
+}
+
+.bottombutton-green {
+  @include bottombuttons($green);
+}
+
+.bottombutton-lightblue {
+  @include bottombuttons($light-blue);
+}
+
+.bottombutton-yellow {
+  @include bottombuttons($yellow);
+}
+
+.bottombutton-red {
+  @include bottombuttons($red);
+}
+
+.bottombutton-grey {
+  @include bottombuttons($dark-grey);
+}
+
+@media only screen and (min-width: 768px) {
+  .bottombuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
