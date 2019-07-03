@@ -20,7 +20,7 @@ $fas: #b7b9cc;
     display: flex;
     align-items: center;
     padding: 20px;
-    margin: 0px 0px 25px 5px;
+    margin: 0px 0px 25px 0px;
     box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
 }
 
@@ -131,6 +131,8 @@ $fas: #b7b9cc;
 
         .dropdown.active {
             .dropdown-list {
+                background-color: #ffffff;
+                z-index: 10;
                 display: block;
                 position: absolute;
                 bottom: -275px;

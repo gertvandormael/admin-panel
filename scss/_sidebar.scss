@@ -1,13 +1,4 @@
-@import "reset", "variables", "mixins", "components";
-
-@mixin text-style($weight: normal, $size: 1em) {
-    font-weight: $text-color;
-    font-size: $size;
-}
-
-@mixin padding($tdir: 12px, $rdir: 16px, $bdir: 12px, $ldir: 16px) {
-    padding: $tdir $rdir $bdir $ldir;
-}
+@import "variables", "mixins";
 
 * {
     margin: 0px;
@@ -101,6 +92,7 @@
         position: relative;
 
         ul {
+            z-index: 10;
             position: absolute;
             top: -10px;
             right: -175px;
@@ -243,6 +235,7 @@
             position: relative;
     
             ul {
+                z-index: 10;
                 position: inherit;
                 top: inherit;
                 right: inherit;

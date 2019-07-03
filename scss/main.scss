@@ -9,9 +9,11 @@
 }
 
 .sidebar {
-    grid-area: sidebar
+    grid-area: sidebar;
 }
-
+.container {
+    margin-left: 15px;
+}
 .content {
     grid-area: content;
 }

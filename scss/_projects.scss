@@ -1,4 +1,4 @@
-@import 'cardjal';
+@import 'variables', 'mixins';
 
 * {
   margin: 0;
@@ -17,13 +17,6 @@
   margin: 0 10px 24px;
   max-width: 360px;
   height: 16px;
-}
-@mixin projectsbar-color($color, $width) {
-  max-width: $width;
-  height: 16px;
-  background-color: $color;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
 }
 
 .projects-header {

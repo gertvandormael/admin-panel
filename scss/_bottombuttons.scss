@@ -1,3 +1,5 @@
+@import 'variables', 'mixins';
+
 * {
   margin: 0px;
   padding: 0px;
@@ -23,15 +25,6 @@
     font-size: 12.8px;
     color: $light-grey;
   }
-
-@mixin bottombuttons ($color) {
-  background-color: $color;
-  padding: 20px;
-  text-align: left;
-  border-radius: 8px;
-  width: 168px;
-  height: 83px;
-}
 
 .bottombutton-darkblue {
   @include bottombuttons($dark-blue);
