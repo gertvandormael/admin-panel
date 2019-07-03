@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/24d7844539.js"></script>
-    <script src="chart.js"></script>
     <title>Admin Panel</title>
 </head>
 
@@ -20,25 +19,115 @@
         <div class="main-content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente rerum quibusdam nam, at adipisci quaerat
             praesentium totam aliquam perferendis a vitae magni, velit sunt, error expedita consequuntur quod
-            dignissimos vero. 
+            dignissimos vero.
 
             <!-- COPY PASTA ME -->
             <div class="top-bar">
                 <div class="search">
-                        <div class="hamburger-menu">
-                                <i class="fas fa-bars"></i>
-                        </div>            
+                    <div class="hamburger-menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
                     <form class="searchbar" action="#">
                         <input type="text" placeholder="Search for ..." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
-                      </form>
+                    </form>
                 </div>
                 <div class="status">
                     <ul>
                         <li><i class="fa fa-search"></i></li>
-                        <li><i class="fas fa-bell"></i></li>
-                        <li><i class="fas fa-envelope"></i></li>
-                        <li><div class="divider"></div></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="fas fa-bell"></i></a>
+                            <div class="dropdown-list">
+                                <h5 class="dropdown-header">Alerts center</h5>
+                                <div class="alert">
+                                    <div class="alert-icon">
+                                        <i class="far fa-file-alt"></i>
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="small-text">December 12, 2019</div>
+                                        <div class="span">A new monthly report is ready to download</div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-donate"></i>
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="small-text">December 7, 2019</div>
+                                        <div class="span">$290.29 has been deposited into your account!</div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="alert-icon">
+                                        <i class="fas fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="small-text">December 2, 2019</div>
+                                        <div class="span">
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="li dropdown">
+                            <a href="#"> <i class="fas fa-envelope"></i>
+                            </a>
+                            <div class="dropdown-list">
+                                <h5 class="dropdown-header">Message center</h5>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-1.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span">Hi there! I am wondering if you c...</div>
+                                        <div class="small-text">
+                                            Emily Flower - 58m
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-2.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span"> I have the photos that you orde...
+                                        </div>
+                                        <div class="small-text">
+                                            Jae Chun - 1d
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-3.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span">
+                                            Last month's reports looks great...
+                                        </div>
+                                        <div class="small-text">
+                                            Morgan Alvarez - 2d
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="alert">
+                                    <div class="message-icon">
+                                        <img src="./img/message-profile-4.jpeg" alt="profile pic">
+                                    </div>
+                                    <div class="alert-text">
+                                        <div class="span">
+                                            Am I a good boy? The reason I ...
+                                        </div>
+                                        <div class="small-text">Chicken the dog - 2w</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
                         <li>Valerie Luna</li>
                         <li><img src="./img/top-avatar.jpeg" alt="avatar"></li>
                     </ul>
@@ -50,106 +139,15 @@
             <div class="container">
                 <div class="content">
                     <div class="panel">
-                        test
-                            <canvas id="myAreaChart" class="chartjs-js-render-monitor" height="320px" width="536px"></canvas>
-                    </div>
-                    <script>
-                        var ctx = document.getElementById("myAreaChart");
-var myLineChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-    datasets: [{
-      label: "Earnings",
-      lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
-      borderColor: "rgba(78, 115, 223, 1)",
-      pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
-      pointHoverRadius: 3,
-      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
-      pointHitRadius: 10,
-      pointBorderWidth: 2,
-      data: [0, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000],
-    }],
-  },
-  options: {
-    maintainAspectRatio: false,
-    layout: {
-      padding: {
-        left: 10,
-        right: 25,
-        top: 25,
-        bottom: 0
-      }
-    },
-    scales: {
-      xAxes: [{
-        time: {
-          unit: 'date'
-        },
-        gridLines: {
-          display: false,
-          drawBorder: false
-        },
-        ticks: {
-          maxTicksLimit: 7
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          maxTicksLimit: 5,
-          padding: 10,
-          // Include a dollar sign in the ticks
-          callback: function(value, index, values) {
-            return '$' + number_format(value);
-          }
-        },
-        gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
-          drawBorder: false,
-          borderDash: [2],
-          zeroLineBorderDash: [2]
-        }
-      }],
-    },
-    legend: {
-      display: false
-    },
-    tooltips: {
-      backgroundColor: "rgb(255,255,255)",
-      bodyFontColor: "#858796",
-      titleMarginBottom: 10,
-      titleFontColor: '#6e707e',
-      titleFontSize: 14,
-      borderColor: '#dddfeb',
-      borderWidth: 1,
-      xPadding: 15,
-      yPadding: 15,
-      displayColors: false,
-      intersect: false,
-      mode: 'index',
-      caretPadding: 10,
-      callbacks: {
-        label: function(tooltipItem, chart) {
-          var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
-        }
-      }
-    }
-  }
-});
 
-                            </script>
+                    </div>
                 </div>
                 <div class="footer">
                 </div>
             </div>
         </div>
     </div>
+    <script src="./js/top-bar.js"></script>
 </body>
 
 </html>
