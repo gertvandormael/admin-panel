@@ -122,21 +122,22 @@ $fas: #b7b9cc;
 .top-bar {
     .status {
         .dropdown {
-            position: relative;
-
             .dropdown-list {
                 display: none;
             }
         }
 
         .dropdown.active {
+            position: relative;
+
             .dropdown-list {
                 background-color: #ffffff;
                 z-index: 10;
                 display: block;
                 position: absolute;
-                bottom: -275px;
+                // bottom: -250px;
                 right: -10px;
+                top: 35px;
             }
         }                
     }
