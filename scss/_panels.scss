@@ -16,7 +16,7 @@
     position: relative;
     grid-area: Dashboard;
     background-color: #ffffff;
-    min-height: 100vh;
+    margin-bottom: 10px;
     width: auto;
     h2 {
         margin-left: 36px;
@@ -38,6 +38,7 @@
     justify-content: space-between;
     margin-bottom: 32px;
     z-index: 3;
+    width: 100%;
 }
 
 .panel_board .panel_a {
@@ -93,7 +94,7 @@
     }
 }
 
-// GRAPHS 
+// GRAPHS
 .earnings-overview {
     width: 70%;
 }
@@ -114,6 +115,7 @@
 
 .revenue-resources {
     width: 25%;
+    margin-right: 20px;
 }
 .revenue-resources .graph-heading {
     @include graph_head;
@@ -133,11 +135,11 @@
     .panel_a {
         width: 90vw;
     }
-    
+
     .earnings-overview{
         width: 90vw;
         margin-right: 12px;
-    
+
     }
     .revenue-resources {
         width: 90vw;

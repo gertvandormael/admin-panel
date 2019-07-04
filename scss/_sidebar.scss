@@ -1,13 +1,5 @@
 @import "variables", "mixins";
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
-
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -233,7 +225,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
-    
+
             ul {
                 z-index: 10;
                 position: inherit;
@@ -254,7 +246,7 @@
                 }
             }
         }
-    
+
 
         .last-divider {
             display: block

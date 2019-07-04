@@ -5,7 +5,7 @@
     border: 1px solid $box-border;
     border-radius: 8px;
     height: 100px;
-    width: 278px;
+    width: 20%;
     margin-top: 28px;
     margin-right: 18px;
     h3 {
@@ -30,7 +30,7 @@
     -webkit-box-shadow: 0px 0px 34px -5px rgba(164, 164, 164,1);
     -moz-box-shadow: 0px 0px 34px -5px rgba(164, 164, 164,1);
     box-shadow: 0px 0px 34px -5px rgba(164, 164, 164,1);
-    z-index: 5;      
+    z-index: 5;
 }
 
 @mixin graph_head (){
@@ -115,6 +115,3 @@ border-bottom-left-radius: 5px;
 @mixin padding($tdir: 12px, $rdir: 16px, $bdir: 12px, $ldir: 16px) {
     padding: $tdir $rdir $bdir $ldir;
 }
-
-
-  
