@@ -62,12 +62,28 @@
     h3 {
         color: $light-blue;
     }
-    .w3-light-grey {
-        display: block;
-        transform: scale(0.8);
-        z-index: 5;
+    .task-content {
+        background-color: $light-grey;
+        border-radius: 4px;
+        margin-top: 3px;
+        margin-left: 28px;
+        max-height: 20px;
+        width: 80%;
+    }
+    .task-percentage {
+        color: #ffffff;
+        background-color: $light-blue;
+        border-radius: 4px;
+        max-height: 20px;
+        width: 60%;
+    }
+    .task-progress {
+        height: 100%;
+        width: 50%;
+        background-color: $light-blue;
     }
 }
+
 
 .panel_board .panel_d {
     @extend .panel_a;
