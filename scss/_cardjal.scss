@@ -20,6 +20,7 @@
   background-color: #fff;
   display: grid;
   grid-area: content;
+  @include box-shadow
 }
 
 @mixin cardcontent {

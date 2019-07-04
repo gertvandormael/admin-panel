@@ -1,6 +1,12 @@
 @import 'variables', 'mixins';
 
 .projects {
+  @include box-shadow;
+  margin-left: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 388px;
+  border-radius: 10px;
   display: grid;
   grid-area: content;
 

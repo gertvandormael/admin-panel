@@ -6,13 +6,16 @@
 
 .illustrations {
   @include cardmarkup;
+  @include box-shadow;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .illustrations-img {
   img {
     max-width: 350px;
     margin-bottom: 20px;
-  }  
+  }
 }
 
 .illustrations-content {
@@ -20,7 +23,7 @@
   img {
     max-width: 350px;
     margin-bottom: 20px;
-  }  
+  }
 }
 
 
