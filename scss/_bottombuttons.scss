@@ -1,19 +1,12 @@
 @import 'variables', 'mixins';
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 .bottombuttons {
   width: 388px;
   height: 327px;
-  padding: 0px 12px;
+  padding: 0 12px;
   line-height: 1.5;
   display: grid;
   grid-area: content;
-}
 
   .buttoncolorname {
     font-weight: bold;
@@ -26,28 +19,29 @@
     color: $light-grey;
   }
 
-.bottombutton-darkblue {
-  @include bottombuttons($dark-blue);
-}
+  .bottombutton-darkblue {
+    @include bottombuttons($dark-blue);
+  }
 
-.bottombutton-green {
-  @include bottombuttons($green);
-}
+  .bottombutton-green {
+    @include bottombuttons($green);
+  }
 
-.bottombutton-lightblue {
-  @include bottombuttons($light-blue);
-}
+  .bottombutton-lightblue {
+    @include bottombuttons($light-blue);
+  }
 
-.bottombutton-yellow {
-  @include bottombuttons($yellow);
-}
+  .bottombutton-yellow {
+    @include bottombuttons($yellow);
+  }
 
-.bottombutton-red {
-  @include bottombuttons($red);
-}
+  .bottombutton-red {
+    @include bottombuttons($red);
+  }
 
-.bottombutton-grey {
-  @include bottombuttons($dark-grey);
+  .bottombutton-grey {
+    @include bottombuttons($dark-grey);
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -58,9 +52,13 @@
     justify-content: space-between;
   }
 }
-
 @media (max-width: 560px) {
-  .bottombutton-darkblue, .bottombutton-green, .bottombutton-lightblue, .bottombutton-yellow, .bottombutton-red, .bottombutton-grey {
+  .bottombutton-darkblue,
+  .bottombutton-green,
+  .bottombutton-grey,
+  .bottombutton-lightblue,
+  .bottombutton-red,
+  .bottombutton-yellow {
     margin-bottom: 20px;
   }
 }
